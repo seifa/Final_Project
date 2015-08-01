@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1438447427 source:/home/nicholas/sum15-nsalv/Final Project/Final Project/main.cpp
+	<SFML/Window.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+	<vector>
+	<iomanip>
+	<locale>
+	<sstream>
+
