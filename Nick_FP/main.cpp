@@ -112,7 +112,7 @@ void update_paddle(sf::Vector2i localposition) /*Mouse input section, local posi
         {
             p.setPosition(localposition.x, 600 - 50.0f);
         }
-        std::cout<<localposition.x<<std::endl;
+         cout<<localposition.x<< endl;
     }
 
     //store useful position info via RectangleShape for class use
@@ -141,16 +141,6 @@ struct Brick
     br.setPosition((x+1)*(66.f), (y + 2)*(23.f));
     br.setSize(sf::Vector2f(60.0f, 20.0f));
     br.setOrigin(60.0f / 2.f, 20.0f / 2.f);
-    if (y == 4)
-        br.setFillColor(sf::Color::Cyan);
-    if (y == 3)
-        br.setFillColor(sf::Color::Red);
-    if (y == 2)
-        br.setFillColor(sf::Color::Green);
-    if (y == 1)
-       br.setFillColor(sf::Color::Yellow);
-    if (y == 0)
-       br.setFillColor(sf::Color::Magenta);
 
     lives = 5.f - y;
 
@@ -289,7 +279,7 @@ string scorer (int counter, sf::Vector2f velocity){
     return score;
 }
 
-void colorSet(vector<Brick>& brickgrid){
+void const colorSet(vector<Brick>& brickgrid){
     for (int i=0; i<brickgrid.size(); i++){
         if (brickgrid[i].lives == 1)
             brickgrid[i].br.setFillColor(sf::Color::Cyan);
@@ -315,7 +305,7 @@ int main()
     sf::Font font;
     font.loadFromFile("DroidSansFallbackFull.ttf");
     if (!font.loadFromFile("DroidSansFallbackFull.ttf")){
-        std::cout<<"Error"<<std::endl;
+         cout<<"Error"<< endl;
     }
 
     sf::Text text;
@@ -324,7 +314,7 @@ int main()
     text.setStyle(sf::Text::Regular);
     text.setColor(sf::Color::Red);
     //text.setPosition(630,0);
-    std::string score;
+     string score;
     //"ball" is instance of Ball class, place in center change window as needed
     Ball ball (800 / 2, 600 / 2);
 
