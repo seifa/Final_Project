@@ -8,20 +8,14 @@
 
 
 #include <iomanip>
-
 #include <locale>
-
 #include <sstream>
 
 
 
 using namespace std;
 
-
-
 bool gameOn = true;
-
-
 
 class playerclass
 
